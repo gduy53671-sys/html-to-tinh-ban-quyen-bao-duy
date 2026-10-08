@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gửi người tớ thương ❤️</title>
+
+<!-- FONT CUTE -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   CƠ BẢN
+===================================================== */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    min-height:100vh;
+
+    font-family:"Quicksand",sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            #ffd6e8 0%,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 80%,
+            #ded6ff 0%,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ffc8dd,
+            #ead8ff,
+            #cfe9ff
+        );
+
+    overflow-x:hidden;
+
+    color:#693b55;
+
+}
+
+
+/* =====================================================
+   THANH CUỘN
+===================================================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:rgba(255,255,255,.35);
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:
+        linear-gradient(
+            #ff8fab,
+            #c77dff
+        );
+
+    border-radius:20px;
+
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card{
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(92%,700px);
+
+    min-height:850px;
+
+    margin:45px auto 100px;
+
+    padding:45px 35px;
+
+    border-radius:38px;
+
+    background:
+        rgba(255,255,255,.58);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:
+        2px solid
+        rgba(255,255,255,.7);
+
+    box-shadow:
+
+        0 30px 80px
+        rgba(120,70,120,.2),
+
+        inset 0 0 35px
+        rgba(255,255,255,.35);
+
+    text-align:center;
+
+    animation:
+        cardAppear
+        1.2s
+        cubic-bezier(.17,.89,.32,1.3);
+
+}
+
+
+@keyframes cardAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(70px)
+            scale(.9)
+            rotate(-1deg);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1)
+            rotate(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   TIM CHÍNH
+===================================================== */
+
+.main-heart{
+
+    font-size:78px;
+
+    filter:
+        drop-shadow(
+            0 10px 18px
+            rgba(255,70,130,.3)
+        );
+
+    animation:
+
+        heartbeat
+        1.2s
+        infinite,
+
+        heartGlow
+        2s
+        infinite;
+
+}
+
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.2);
+    }
+
+}
+
+
+@keyframes heartGlow{
+
+    0%,100%{
+
+        filter:
+            drop-shadow(
+                0 8px 12px
+                rgba(255,80,140,.2)
+            );
+
+    }
+
+    50%{
+
+        filter:
+            drop-shadow(
+                0 8px 28px
+                rgba(255,80,140,.65)
+            );
+
+    }
+
+}
+
+
+/* =====================================================
+   TIÊU ĐỀ
+===================================================== */
+
+h1{
+
+    margin-top:10px;
+
+    font-family:"Baloo 2",cursive;
+
+    font-size:
+        clamp(
+            34px,
+            7vw,
+            52px
+        );
+
+    font-weight:800;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff4f81,
+            #ff75a8,
+            #b76cff,
+            #ff4f81
+        );
+
+    background-size:300% 100%;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    animation:
+        titleGradient
+        4s
+        ease
+        infinite,
+
+        titleFloat
+        3s
+        ease-in-out
+        infinite;
+
+}
+
+
+@keyframes titleGradient{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+@keyframes titleFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-5px);
+    }
+
+}
+
+
+/* =====================================================
+   SUBTITLE
+===================================================== */
+
+.subtitle{
+
+    margin-top:5px;
+
+    font-family:"Baloo 2",cursive;
+
+    font-size:20px;
+
+    color:#92526f;
+
+    animation:
+        subtitleAppear
+        1.8s
+        ease;
+
+}
+
+
+@keyframes subtitleAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   KHUNG LỜI TỎ TÌNH
+===================================================== */
+
+.message-box{
+
+    margin-top:30px;
+
+    height:420px;
+
+    padding:27px;
+
+    border-radius:28px;
+
+    background:
+        rgba(255,255,255,.75);
+
+    border:
+        1px solid
+        rgba(255,255,255,.9);
+
+    box-shadow:
+
+        inset 0 0 25px
+        rgba(255,150,200,.12),
+
+        0 15px 35px
+        rgba(100,60,100,.08);
+
+    overflow-y:auto;
+
+    text-align:left;
+
+}
+
+
+.message-box::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+
+.message-box::-webkit-scrollbar-thumb{
+
+    background:
+        linear-gradient(
+            #ff8fab,
+            #c77dff
+        );
+
+    border-radius:20px;
+
+}
+
+
+/* =====================================================
+   CHỮ TỎ TÌNH
+===================================================== */
+
+.message{
+
+    white-space:pre-line;
+
+    font-family:"Baloo 2",cursive;
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#673b53;
+
+    animation:
+        textGlow
+        3s
+        ease-in-out
+        infinite;
+
+}
+
+
+@keyframes textGlow{
+
+    0%,100%{
+
+        text-shadow:
+            0 1px 8px
+            rgba(255,100,160,.05);
+
+    }
+
+    50%{
+
+        text-shadow:
+            0 1px 16px
+            rgba(255,100,160,.2);
+
+    }
+
+}
+
+
+/* =====================================================
+   HƯỚNG DẪN KÉO
+===================================================== */
+
+.scroll-hint{
+
+    margin-top:15px;
+
+    font-family:"Baloo 2",cursive;
+
+    font-size:16px;
+
+    color:#a15d78;
+
+    animation:
+        bounce
+        1.5s
+        infinite;
+
+}
+
+
+@keyframes bounce{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(6px);
+    }
+
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.buttons{
+
+    position:relative;
+
+    margin-top:30px;
+
+    min-height:100px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    font-family:"Baloo 2",cursive;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.06);
+
+}
+
+
+/* =====================================================
+   NÚT ĐỒNG Ý
+===================================================== */
+
+.yes{
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f81,
+            #ff78aa,
+            #c77dff
+        );
+
+    background-size:200% 200%;
+
+    animation:
+        yesGradient
+        3s
+        ease
+        infinite;
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(255,70,130,.3);
+
+}
+
+
+@keyframes yesGradient{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+/* =====================================================
+   NÚT KHÔNG ĐỒNG Ý
+===================================================== */
+
+.no{
+
+    color:#70435b;
+
+    background:white;
+
+    box-shadow:
+        0 8px 20px
+        rgba(100,60,100,.15);
+
+    position:relative;
+
+}
+
+
+/* =====================================================
+   TIM BAY NỀN
+===================================================== */
+
+.bg-heart{
+
+    position:fixed;
+
+    bottom:-50px;
+
+    pointer-events:none;
+
+    z-index:1;
+
+    animation:
+        fly
+        linear
+        forwards;
+
+}
+
+
+@keyframes fly{
+
+    from{
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    to{
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* =====================================================
+   POPUP
+===================================================== */
+
+.popup{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:100;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:
+        rgba(70,30,60,.4);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+.popup-box{
+
+    width:min(92%,520px);
+
+    padding:42px 30px;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.98),
+            rgba(255,230,242,.98)
+        );
+
+    border-radius:38px;
+
+    border:
+        2px solid
+        rgba(255,255,255,.9);
+
+    box-shadow:
+
+        0 35px 90px
+        rgba(80,30,70,.3);
+
+    animation:
+        popup
+        .7s
+        cubic-bezier(.17,.89,.32,1.3);
+
+}
+
+
+@keyframes popup{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            scale(.45)
+            rotate(-6deg);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            scale(1)
+            rotate(0);
+
+    }
+
+}
+
+
+/* =====================================================
+   TIM POPUP
+===================================================== */
+
+.popup-heart{
+
+    font-size:80px;
+
+    animation:
+        heartbeat
+        1s
+        infinite;
+
+}
+
+
+/* =====================================================
+   YAYYYYY
+===================================================== */
+
+.popup-box h2{
+
+    margin-top:8px;
+
+    font-family:"Baloo 2",cursive;
+
+    font-size:45px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff4f81,
+            #c77dff,
+            #ff4f81
+        );
+
+    background-size:200% 100%;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    animation:
+        popupText
+        3s
+        infinite;
+
+}
+
+
+@keyframes popupText{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+/* =====================================================
+   NỘI DUNG POPUP
+===================================================== */
+
+.popup-box p{
+
+    margin-top:18px;
+
+    font-family:"Baloo 2",cursive;
+
+    line-height:1.8;
+
+    font-size:20px;
+
+    color:#673b53;
+
+}
+
+
+/* =====================================================
+   NÚT NHẮN TIN
+===================================================== */
+
+.message-btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:16px 30px;
+
+    border-radius:50px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-family:"Baloo 2",cursive;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f81,
+            #ff79aa,
+            #c77dff
+        );
+
+    background-size:200% 200%;
+
+    box-shadow:
+
+        0 12px 30px
+        rgba(190,80,180,.35);
+
+    animation:
+        messageGradient
+        3s
+        infinite;
+
+    transition:.3s;
+
+}
+
+
+.message-btn:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.07);
+
+    box-shadow:
+
+        0 18px 40px
+        rgba(190,80,180,.5);
+
+}
+
+
+@keyframes messageGradient{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+
+/* =====================================================
+   TIM BẮN KHI ĐỒNG Ý
+===================================================== */
+
+.love-heart{
+
+    position:fixed;
+
+    bottom:0;
+
+    z-index:200;
+
+    pointer-events:none;
+
+    animation:
+        loveFly
+        3s
+        linear
+        forwards;
+
+}
+
+
+@keyframes loveFly{
+
+    0%{
+
+        transform:
+            translateY(0)
+            scale(.5)
+            rotate(0);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+            translateY(-110vh)
+            scale(1.5)
+            rotate(360deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* =====================================================
+   NÚT NHẠC
+===================================================== */
+
+#musicButton{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:58px;
+
+    height:58px;
+
+    padding:0;
+
+    border-radius:50%;
+
+    z-index:999;
+
+    font-size:25px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff4f81,
+            #c77dff
+        );
+
+    box-shadow:
+
+        0 8px 25px
+        rgba(180,70,160,.35);
+
+    animation:
+        musicPulse
+        2s
+        infinite;
+
+}
+
+
+#musicButton:hover{
+
+    transform:scale(1.12);
+
+}
+
+
+@keyframes musicPulse{
+
+    0%,100%{
+
+        box-shadow:
+            0 8px 25px
+            rgba(180,70,160,.3);
+
+    }
+
+    50%{
+
+        box-shadow:
+            0 8px 35px
+            rgba(255,80,160,.65);
+
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:600px){
+
+    .card{
+
+        margin-top:20px;
+
+        padding:30px 18px;
+
+        min-height:800px;
+
+    }
+
+
+    .main-heart{
+
+        font-size:62px;
+
+    }
+
+
+    .message-box{
+
+        height:390px;
+
+        padding:20px;
+
+    }
+
+
+    .message{
+
+        font-size:18px;
+
+        line-height:1.9;
+
+    }
+
+
+    .buttons{
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+
+    .buttons button{
+
+        width:210px;
+
+    }
+
+
+    .popup-box h2{
+
+        font-size:38px;
+
+    }
+
+
+    .popup-box p{
+
+        font-size:18px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NHẠC
+===================================================== -->
+
+<audio id="loveMusic" loop>
+
+    <source
+        src="love.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+<!-- NÚT BẬT / TẮT NHẠC -->
+
+<button
+    id="musicButton"
+    onclick="toggleMusic()"
+>
+    🎵
+</button>
+
+
+
+<!-- =====================================================
+     CARD CHÍNH
+===================================================== -->
+
+<div class="card">
+
+
+    <div class="main-heart">
+        ❤️
+    </div>
+
+
+    <h1>
+        Gửi người tớ thương
+    </h1>
+
+
+    <div class="subtitle">
+        Có một điều tớ muốn nói với cậu... 🥺
+    </div>
+
+
+    <!-- KHUNG CÓ THỂ KÉO -->
+
+    <div
+        class="message-box"
+        id="messageBox"
+    >
+
+        <div
+            class="message"
+            id="message"
+        ></div>
+
+    </div>
+
+
+    <div class="scroll-hint">
+
+        👆 Kéo lên / kéo xuống
+        để đọc hết nhé 💕
+
+    </div>
+
+
+    <!-- BUTTON -->
+
+    <div class="buttons">
+
+
+        <button
+            class="yes"
+            onclick="acceptLove()"
+        >
+
+            Đồng ý ❤️
+
+        </button>
+
+
+        <button
+            class="no"
+            id="noButton"
+            onclick="runAway()"
+        >
+
+            Không đồng ý 😳
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     POPUP SAU KHI ĐỒNG Ý
+===================================================== -->
+
+<div
+    class="popup"
+    id="popup"
+>
+
+    <div class="popup-box">
+
+
+        <div class="popup-heart">
+
+            💖
+
+        </div>
+
+
+        <h2>
+
+            Yayyyyy! 🥰
+
+        </h2>
+
+
+        <p>
+
+            Vậy là từ hôm nay... 💕
+
+            <br><br>
+
+            Cậu chính thức trở thành
+            <b>người đặc biệt nhất</b>
+            của tớ rồi! ❤️
+
+            <br><br>
+
+            Tớ sẽ cố gắng làm cho
+            mỗi ngày của cậu đều thật vui
+            và thật hạnh phúc. 🌷
+
+            <br><br>
+
+            Cảm ơn cậu vì đã chọn tớ. 🥺❤️
+
+        </p>
+
+
+        <!-- CHỈ CÓ NÚT NÀY -->
+
+        <a
+            class="message-btn"
+            href="https://www.facebook.com/baoduyk12"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+
+            💌 Nhắn tin với tớ nhé
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+/* =====================================================
+   LỜI TỎ TÌNH
+===================================================== */
+
+const loveText = `Tớ không biết phải bắt đầu từ đâu...
+
+Nhưng từ ngày gặp cậu,
+những ngày bình thường của tớ
+bỗng trở nên dễ thương hơn rất nhiều.
+
+Tớ thích nụ cười của cậu,
+thích cách cậu nói chuyện,
+và thích cả những điều nhỏ bé
+mà có thể cậu chẳng bao giờ để ý.
+
+Mỗi lần nhìn thấy tin nhắn của cậu,
+tớ đều vô thức mỉm cười.
+
+Có những lúc tớ tự hỏi...
+
+Không biết từ khi nào
+cậu lại trở nên quan trọng với tớ đến vậy.
+
+Có thể tớ không phải người
+hoàn hảo nhất...
+
+Tớ cũng không biết
+mình có phải người tốt nhất
+để ở bên cậu hay không.
+
+Nhưng có một điều
+tớ chắc chắn...
+
+Đó là tớ thật lòng thích cậu.
+
+Thích rất nhiều. ❤️
+
+Tớ muốn được cùng cậu
+đi qua những ngày vui,
+những ngày buồn,
+
+cùng nhau nói chuyện
+về những điều nhỏ nhặt,
+
+cùng nhau cười,
+cùng nhau tạo ra
+thật nhiều kỷ niệm đẹp.
+
+Vậy nên...
+
+Tớ có một câu hỏi
+muốn hỏi cậu.
+
+Cậu có muốn
+cùng tớ viết tiếp
+câu chuyện này không?
+
+❤️ ❤️ ❤️`;
+
+
+/* =====================================================
+   HIỆU ỨNG GÕ CHỮ
+===================================================== */
+
+let index = 0;
+
+const message =
+    document.getElementById("message");
+
+const messageBox =
+    document.getElementById("messageBox");
+
+
+function typeText(){
+
+    if(index < loveText.length){
+
+        message.textContent =
+            loveText.substring(
+                0,
+                index + 1
+            );
+
+        index++;
+
+
+        messageBox.scrollTop =
+            messageBox.scrollHeight;
+
+
+        setTimeout(
+            typeText,
+            28
+        );
+
+    }
+
+    else{
+
+        messageBox.scrollTop = 0;
+
+    }
+
+}
+
+
+setTimeout(
+    typeText,
+    1000
+);
+
+
+
+/* =====================================================
+   DANH SÁCH TIM / HOA
+===================================================== */
+
+const heartList = [
+
+    "❤️",
+    "💕",
+    "💗",
+    "💖",
+    "💘",
+    "💝",
+    "🌸",
+    "🌷",
+    "✨",
+    "💞"
+
+];
+
+
+/* =====================================================
+   TIM BAY NỀN
+===================================================== */
+
+function createBackgroundHeart(){
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.className =
+        "bg-heart";
+
+
+    heart.innerText =
+        heartList[
+            Math.floor(
+                Math.random()
+                *
+                heartList.length
+            )
+        ];
+
+
+    heart.style.left =
+        Math.random()*100 + "vw";
+
+
+    heart.style.fontSize =
+        (
+            15 +
+            Math.random()*25
+        ) + "px";
+
+
+    heart.style.animationDuration =
+        (
+            5 +
+            Math.random()*6
+        ) + "s";
+
+
+    document.body.appendChild(
+        heart
+    );
+
+
+    setTimeout(
+        () => heart.remove(),
+        12000
+    );
+
+}
+
+
+setInterval(
+    createBackgroundHeart,
+    350
+);
+
+
+
+/* =====================================================
+   NÚT KHÔNG ĐỒNG Ý CHẠY
+===================================================== */
+
+function runAway(){
+
+    const button =
+        document.getElementById(
+            "noButton"
+        );
+
+
+    button.style.position =
+        "fixed";
+
+
+    const maxX =
+        window.innerWidth -
+        button.offsetWidth -
+        20;
+
+
+    const maxY =
+        window.innerHeight -
+        button.offsetHeight -
+        20;
+
+
+    const x =
+        Math.max(
+            10,
+            Math.random()*maxX
+        );
+
+
+    const y =
+        Math.max(
+            10,
+            Math.random()*maxY
+        );
+
+
+    button.style.left =
+        x + "px";
+
+
+    button.style.top =
+        y + "px";
+
+
+    button.animate(
+
+        [
+
+            {
+                transform:
+                    "scale(.7) rotate(-10deg)"
+            },
+
+            {
+                transform:
+                    "scale(1.15) rotate(8deg)"
+            },
+
+            {
+                transform:
+                    "scale(1) rotate(0)"
+            }
+
+        ],
+
+        {
+            duration:450
+        }
+
+    );
+
+}
+
+
+
+/* =====================================================
+   BẤM ĐỒNG Ý
+===================================================== */
+
+function acceptLove(){
+
+    document.getElementById(
+        "popup"
+    ).style.display =
+        "flex";
+
+
+    /* Bắn tim */
+
+    for(
+        let i = 0;
+        i < 100;
+        i++
+    ){
+
+        setTimeout(
+
+            () => createLoveHeart(),
+
+            i * 20
+
+        );
+
+    }
+
+}
+
+
+
+/* =====================================================
+   TIM BẮN LÊN
+===================================================== */
+
+function createLoveHeart(){
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.className =
+        "love-heart";
+
+
+    heart.innerText =
+        heartList[
+            Math.floor(
+                Math.random()
+                *
+                heartList.length
+            )
+        ];
+
+
+    heart.style.left =
+        Math.random()*100 + "vw";
+
+
+    heart.style.fontSize =
+        (
+            20 +
+            Math.random()*40
+        ) + "px";
+
+
+    heart.style.animationDuration =
+        (
+            2 +
+            Math.random()*2
+        ) + "s";
+
+
+    document.body.appendChild(
+        heart
+    );
+
+
+    setTimeout(
+        () => heart.remove(),
+        4000
+    );
+
+}
+
+
+
+/* =====================================================
+   NHẠC
+===================================================== */
+
+const loveMusic =
+    document.getElementById(
+        "loveMusic"
+    );
+
+
+const musicButton =
+    document.getElementById(
+        "musicButton"
+    );
+
+
+let musicPlaying = false;
+
+
+/*
+   Trình duyệt thường chặn
+   autoplay.
+
+   Vì vậy khi người dùng
+   bấm/chạm lần đầu vào trang,
+   nhạc sẽ bắt đầu.
+*/
+
+document.addEventListener(
+
+    "click",
+
+    function startMusic(){
+
+        if(!musicPlaying){
+
+            loveMusic.volume = 0.35;
+
+
+            loveMusic.play()
+
+            .then(() => {
+
+                musicPlaying = true;
+
+                musicButton.innerHTML =
+                    "🔊";
+
+            })
+
+            .catch(() => {});
+
+        }
+
+
+        document.removeEventListener(
+            "click",
+            startMusic
+        );
+
+    },
+
+    {
+        once:true
+    }
+
+);
+
+
+
+/* =====================================================
+   BẬT / TẮT NHẠC
+===================================================== */
+
+function toggleMusic(){
+
+    if(loveMusic.paused){
+
+        loveMusic.play();
+
+        musicPlaying = true;
+
+        musicButton.innerHTML =
+            "🔊";
+
+    }
+
+    else{
+
+        loveMusic.pause();
+
+        musicPlaying = false;
+
+        musicButton.innerHTML =
+            "🎵";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
